@@ -25,7 +25,19 @@
 ##### 4. Containerization vs virtualization ( Containers vs virtual machines )  https://blog.netapp.com/blogs/containers-vs-vms/
   * Containers and virtual machines have similar resource isolation and allocation benefits, but function differently because containers virtualize the operating system instead of hardware. Containers are more portable and efficient.
 
-### monitoring 
+
+##### 5. Devops KPI 
+https://puppet.com/blog/5-kpis-make-case-for-devops  
+https://dzone.com/articles/devops-kpi-in-practicechapter-1deployment-speed-fr  
+
+  * Deployment frequency    
+  * Speed of deployment   
+  * Deployment success rate / Failure rate   
+  * Time to recovery / How quickly service can be restored after a failed deployment  
+  * Change lead time  
+  * Service availability
+  
+The business benefits of DevOps practices are clear. Companies that can deploy changes quickly and reliably are able to introduce new features and improvements in response to the market, and ahead of competitors. Their revenue streams are more dependable, and they can plan better for the future. 
 
 
 
