@@ -25,6 +25,8 @@
 ##### 4. Containerization vs virtualization ( Containers vs virtual machines )  https://blog.netapp.com/blogs/containers-vs-vms/
   * Containers and virtual machines have similar resource isolation and allocation benefits, but function differently because containers virtualize the operating system instead of hardware. Containers are more portable and efficient.
 
+### monitoring 
+
 
 
 ### soft 
@@ -52,9 +54,31 @@
 ##### 5. Agility 
  * Agility is something different all together. Agility is a clean, un-opinionated agile board that progressively adds more structure when you need it. If you can’t decide between scrum and kanban, go with an agility project. 
  
- 
- 
+##### 6. ITSM https://en.wikipedia.org/wiki/IT_service_management
+ * It is how you manage the information systems that deliver value to your customers.ITSM could include activities like planning and managing changes so they don’t cause disruption to the business, fixing things when they go wrong
+
+##### 7. ITIL https://en.wikipedia.org/wiki/ITIL
+ * set of detailed practices for IT service management (ITSM) that focuses on aligning IT services with the needs of business. ITIL describes processes, procedures, tasks, and checklists which are not organization-specific or technology-specific, but can be applied by an organization for establishing integration with the organization's strategy, delivering value, and maintaining a minimum level of competency. It allows the organization to establish a baseline from which it can plan, implement, and measure. It is used to demonstrate compliance and to measure improvement.ITIL is divided into a series of five core volumes, each covering a different ITSM lifecycle stage. These stages are:   
+> Service Strategy   
+> Service Design    
+> Service Transition   
+> Service Operation   
+> Continual Service Improvement    
+
+
+##### 8. Top Leadership Skills  https://www.thebalancecareers.com/top-leadership-skills-2063782   
+ * Communication - you need to be able to clearly and succinctly explain to your employees everything from organizational goals to specific tasks.
+ * Motivation - need to inspire their workers to go the extra mile for their organizations.   
+ * Delegating - identify the skills of each of your employees, and assign duties to each employee based on his or her skill set.    
+ * Positivity   
+ * Feedback ( Following up, coaching , Mentoring ...) 
+ * Responsibility - A leader is responsible for both the successes and failures of his or her team. Therefore, you need to be willing to accept blame when something does not go correctly. ( Acknowledging mistakes, Project planning, Resolving problems)  
+ * 
+
+
 #####  
   * SDLC - Systems development life cycle  
   * RCA - root cause analysis 
-  
+  * ITSM - IT service management 
+  * ITIL - Information Technology Infrastructure Library
+  * CALMS - Culture / Automation /Lean practices /Measurement/ Sharing.  
