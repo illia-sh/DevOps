@@ -1,18 +1,18 @@
 # DevOps
 
-##### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
+#### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
   * Infrastructure as a Service (IaaS) - Contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space. Infrastructure as a Service provides you with the highest level of flexibility and management control over your IT resources and is most similar to existing IT resources that many IT departments and developers are familiar with today.
 
   * Software as a Service (SaaS)  - is the simplest form of cloud computing. There is no third-party development or resource for the user, rather SaaS applications offer powerful tools right from your web browser that, in most cases, give users the ability to collaborate with others cheaply and from any location.( google docs, gmail ) 
 
   * Platforms as a service -  remove the need for organizations to manage the underlying infrastructure (usually hardware and operating systems) and allow you to focus on the deployment and management of your applications. This helps you be more efficient as you don’t need to worry about resource procurement, capacity planning, software maintenance, patching, or any of the other undifferentiated heavy lifting involved in running your application.
 
-##### 2. Cloud Computing Deployment Models
+#### 2. Cloud Computing Deployment Models
   * Cloud  
   * Hybrid  
   * On-premises  
  
-##### 3. Deployment strategies https://thenewstack.io/deployment-strategies/ 
+#### 3. Deployment strategies https://thenewstack.io/deployment-strategies/ 
 
   * Recreate: Version A is terminated then version B is rolled out. 
   * Ramped (also known as rolling-update or incremental): Version B is slowly rolled out and replacing version A.
@@ -21,12 +21,24 @@
   * A/B testing: Version B is released to a subset of users under specific condition.
   * Shadow: Version B receives real-world traffic alongside version A and doesn’t impact the response.
 
+#### 4. Branch Strategy
+https://www.atlassian.com/agile/software-development/branching   
+   
+  * Branching ( feature development[Feature branching,Task Branching,Release branching])   
+ -- allow parallel development of distinct features   
+ -- isolate changed without destabilitinz the codebase   
+ -- integrate changes according to development process  
 
-##### 4. Containerization vs virtualization ( Containers vs virtual machines )  https://blog.netapp.com/blogs/containers-vs-vms/
+  * TRUNK(mainline) - A source-control branching model, where developers collaborate on code in a single branch called ‘trunk’   
+  * Gitflow Workflow  - is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release.  
+
+  * GitHub flow - https://www.freshconsulting.com/git-development-workflows-git-flow-vs-github-flow/
+  
+#### 5. Containerization vs virtualization ( Containers vs virtual machines )  https://blog.netapp.com/blogs/containers-vs-vms/
   * Containers and virtual machines have similar resource isolation and allocation benefits, but function differently because containers virtualize the operating system instead of hardware. Containers are more portable and efficient.
 
 
-##### 5. Devops KPI 
+#### 6. Devops KPI 
 https://puppet.com/blog/5-kpis-make-case-for-devops  
 https://dzone.com/articles/devops-kpi-in-practicechapter-1deployment-speed-fr  
 
