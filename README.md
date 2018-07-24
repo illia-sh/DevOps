@@ -51,37 +51,47 @@ https://dzone.com/articles/devops-kpi-in-practicechapter-1deployment-speed-fr
   
 The business benefits of DevOps practices are clear. Companies that can deploy changes quickly and reliably are able to introduce new features and improvements in response to the market, and ahead of competitors. Their revenue streams are more dependable, and they can plan better for the future. 
 
+#### 7. Continuous Integration (CI):   
+  * short-lived feature branches, team is merging to master branch multiple times per day, fully automated build and test process which gives feedback within 10 minutes; deployment is manual.
+
+#### 8. Continuous Delivery (CD): 
+  * CI + the entire software release process is automated, it may be composed of multiple stages, and deployment to production is manual.
+
+#### 9. Continuous Deployment (CI+CD):  
+  * CI + CD + fully automated deployment to production.
+
+https://www.quora.com/What-is-the-difference-between-continuous-integration-and-continuous-deployment
 
 
 ### soft 
 
 #### Agile/Scrum/Kanban https://www.atlassian.com/agile/kanban/kanban-vs-scrum
 
-##### 1. Agile
+#### 1. Agile
  * Agile is a structured and iterative approach to project management and product development. It recognizes the volatility of product development, and provides a methodology for self-organizing teams to respond to change without going off the rails. Today, agile is hardly a competitive advantage. No one has the luxury to develop a product for years or even months in a black box. This means it’s more important than ever to get it right.
 
-##### 2. Kanban – Incremental Improvements
+#### 2. Kanban – Incremental Improvements
  * Kanban is all about continuous development and delivery, tackling a small number of tasks fluidly and concurrently. Kanban teams use a visual planning tool—the kanban board—that displays each project (user story) on a card and moves cards through columns that represent progressive stages of completion. If your team has a continuous stream of work requests, kanban may be right for you.
   ###### Release Methodology    
 > In kanban, updates are released whenever they are ready, without a regular schedule or predetermined due dates.       
 > In theory, kanban does not prescribe a fixed time to deliver a task. If the task gets completed earlier (or later), it can be released as needed without having to wait for a preset release milestone, as in the case of scrum.    
-##### 3. Scrum  
+#### 3. Scrum  
   * Scrum also splits out complex tasks into user stories and visualizes them on a workflow. Scrum teams commit to ship working software at the end of set intervals, called sprints. If you need to ship value to customers on a regular basis, scrum is the way.  
    ###### Scrum Roles:  
 > The Product Owner owns and manages the product backlog, understands business requirements, and prioritizes the work to be done by the development team.     
 > The Scrum Master manages the scrum board and workflow, and helps the team stay grounded in the scrum framework.   
 > The development team completes the work and demonstrates collective accountability.    
 
-##### 4. Kanban vs Scrum 
+#### 4. Kanban vs Scrum 
   * Looking at both agile software development methodologies it should be more clear what to introduce when: If your organization is really stuck and needs a fundamental shift towards a more efficient process, Scrum seems to be more appropiate. If you already have working processes, which you want to improve over time without shaking up the whole system, Kanban should be your tool of choice.
   
-##### 5. Agility 
+#### 5. Agility 
  * Agility is something different all together. Agility is a clean, un-opinionated agile board that progressively adds more structure when you need it. If you can’t decide between scrum and kanban, go with an agility project. 
  
-##### 6. ITSM https://en.wikipedia.org/wiki/IT_service_management
+#### 6. ITSM https://en.wikipedia.org/wiki/IT_service_management
  * It is how you manage the information systems that deliver value to your customers.ITSM could include activities like planning and managing changes so they don’t cause disruption to the business, fixing things when they go wrong
 
-##### 7. ITIL https://en.wikipedia.org/wiki/ITIL
+#### 7. ITIL https://en.wikipedia.org/wiki/ITIL
  * set of detailed practices for IT service management (ITSM) that focuses on aligning IT services with the needs of business. ITIL describes processes, procedures, tasks, and checklists which are not organization-specific or technology-specific, but can be applied by an organization for establishing integration with the organization's strategy, delivering value, and maintaining a minimum level of competency. It allows the organization to establish a baseline from which it can plan, implement, and measure. It is used to demonstrate compliance and to measure improvement.ITIL is divided into a series of five core volumes, each covering a different ITSM lifecycle stage. These stages are:   
 > Service Strategy   
 > Service Design    
@@ -90,18 +100,29 @@ The business benefits of DevOps practices are clear. Companies that can deploy c
 > Continual Service Improvement    
 
 
-##### 8. Top Leadership Skills  https://www.thebalancecareers.com/top-leadership-skills-2063782   
+#### 8. Top Leadership Skills  https://www.thebalancecareers.com/top-leadership-skills-2063782   
  * Communication - you need to be able to clearly and succinctly explain to your employees everything from organizational goals to specific tasks.
  * Motivation - need to inspire their workers to go the extra mile for their organizations.   
  * Delegating - identify the skills of each of your employees, and assign duties to each employee based on his or her skill set.    
  * Positivity   
  * Feedback ( Following up, coaching , Mentoring ...) 
  * Responsibility - A leader is responsible for both the successes and failures of his or her team. Therefore, you need to be willing to accept blame when something does not go correctly. ( Acknowledging mistakes, Project planning, Resolving problems)  
- * 
+#### 9.RACI matrix (Responsible, Accountable, Consulted, and Informed) 
+ * Responsible (also Recommender) Those who do the work to achieve the task
+ * Accountable (also Approver or final approving authority), accountable must sign off (approve) work that responsible provides. There must be only one accountable specified for each task or deliverable
+ * Consulted (sometimes Consultant )
+ * Informed (also Informee)  Those who are kept up-to-date on progress, often only on completion of the task or deliverable;
 
+#### 10. SDLC - Systems development life cycle 
+  * SDLC is a process followed for a software project, within a software organization. It consists of a detailed plan describing how to develop, maintain, replace and alter or enhance specific software.
+The life cycle defines a methodology for improving the quality of software and the overall development process.
+>Planing --> Defining --> Designing --> Building --> Testing --> Deployment
 
-#####  
-  * SDLC - Systems development life cycle  
+#### 11.Task assignment VS Task delegation
+  * An assignment is the process of transferring responsibility and accountability.
+Delegation is the process by which responsibility and authority for performing a task or activity is transferred to another person.
+####  
+
   * RCA - root cause analysis 
   * ITSM - IT service management 
   * ITIL - Information Technology Infrastructure Library
