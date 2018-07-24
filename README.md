@@ -55,9 +55,10 @@ https://www.atlassian.com/agile/software-development/branching
   * Containers and virtual machines have similar resource isolation and allocation benefits, but function differently because containers virtualize the operating system instead of hardware. Containers are more portable and efficient.
 
 
-#### 6. Devops KPI 
+#### 6. Devops KPI (metrics) 
 https://puppet.com/blog/5-kpis-make-case-for-devops  
 https://dzone.com/articles/devops-kpi-in-practicechapter-1deployment-speed-fr  
+https://stackify.com/15-metrics-for-devops-success/
 
   * Deployment frequency    
   * Speed of deployment   
