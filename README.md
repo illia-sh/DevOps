@@ -4,10 +4,12 @@
   ||  
   * DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.  
 
-#### 0.1 Agile vs Devops
+#### 0.2 What is SRE? - https://cloudplatform.googleblog.com/2018/05/SRE-vs-DevOps-competing-standards-or-close-friends.html
+
+#### 0.3 Agile vs Devops
   * Agile software development methodology focuses on the development of software but DevOps on the other hand is responsible for development as well as deployment of the software in the safest and most reliable way
   
-#### 0.2 DevOps Best Practices  
+#### 0.3 DevOps Best Practices  
   * Continuous Integration (Jenkins,TeamCity,Travis CI,Go CD,Bamboo,Gitlab CI,CircleCI)
   * Continuous Delivery  
   * Microservices  
