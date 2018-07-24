@@ -1,10 +1,13 @@
-#### 0.what is devops?  https://aws.amazon.com/devops/what-is-devops/  
+#### 0 what is devops?  https://aws.amazon.com/devops/what-is-devops/  
   * DevOps is a software engineering culture and practice that aims at unifying software development (Dev) and software operation (Ops).  
   The main characteristic of the DevOps movement is to strongly advocate automation and monitoring at all steps of software construction    
   ||  
   * DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.  
 
-#### 0.1 DevOps Best Practices  
+#### 0.1 Agile vs Devops
+  * Agile software development methodology focuses on the development of software but DevOps on the other hand is responsible for development as well as deployment of the software in the safest and most reliable way
+  
+#### 0.2 DevOps Best Practices  
   * Continuous Integration (Jenkins,TeamCity,Travis CI,Go CD,Bamboo,Gitlab CI,CircleCI)
   * Continuous Delivery  
   * Microservices  
@@ -99,12 +102,18 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
   * foodcritic
   * rubocop
   * Fauxhai - Fauxhai is a tool for mocking out ohai data to provide node attributes for testing. Fauxhai is used within ChefSpec.
- 
- #### 11.1 Chef Development Phases https://blog.chef.io/2015/04/21/overview-of-test-driven-infrastructure-with-chef/
+
+#### 11.0 Monolithic vs single cookbook
+  https://github.com/anniehedgpeth/chef-certification-study-guides/blob/master/local-cookbook-development/local-cookbook-development-study-guide.md  
+  
+#### 11.1 Chef Development Phases https://blog.chef.io/2015/04/21/overview-of-test-driven-infrastructure-with-chef/
   * Pre-convergence -  is the phase before a node is converged by Chef, and is the phase when testing that doesn’t require a node to run Chef happens. Syntax checking, lint checking, or unit tests are performed during pre-convergence. Automated testing in CI usually does pre-convergence tests, such as GitHub repositories configured with Travis CI.  
   * Convergence - is the phase when Chef runs and makes changes to the system to “converge” it to be in the desired state. This is where resources are tested for current state, and repaired (action taken by providers) if they’re not correct.
-  * Post-convergence - is the phase after a node finishes running Chef. Testing in this phase verifies that the node is in the desired state. This can include checks that a particular port is listening, that a configuration file contains the correct content, or that a service is running with the proper configuration.
+  * Post-convergence - is the phase after a node finishes running Chef. Testing in this phase verifies that the node is in the desired state. This can include checks that a particular port is listening, that a configuration file contains the correct content, or that a service is running with the proper configuration.  
+>Load -> Compile -> Converge --> Cleanup  
 
+  * ruby_block Use the ruby_block resource to execute Ruby code during a chef-client run. Ruby code in the ruby_block resource is evaluated with other resources during convergence, whereas Ruby code outside of a ruby_block resource is evaluated before other resources, as the recipe is compiled.  
+  
 #### 11.2 Chef Types of Testing
   * Unit Testing - Unit tests are meant to execute fast, and happen without converging the node, so they are done in the pre-convergence phase. Unit testing Chef cookbooks is done with ChefSpec. It is very important that one does not fall into the trap of testing that Chef itself works.  
   * Integration Testing(inspec) - The intent of integration testing is to verify that the end state of the system is in fact what we wanted after Chef converges the node so we can have a higher degree of confidence that our code is doing what we need.
@@ -113,7 +122,7 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
   * Ansible’s agentless push-mode using a ZeroMQ implementation at the transport layer means quick deployment and low performance overhead when triggering ad-hoc jobs from a developer workstation or a central resource like the Ansible tower.
   * Chef can work like pull-base client-agent however, Chef also provides a ZeroMQ-based push agent via its “push-jobs” add-on package.
    
-#### 12.  Load Balancing methods  
+#### 12. Network: Load Balancing methods  
   * Round Robin - A simple method of load balancing servers or for providing simple fault tolerance.  
   * Weighted Round Robin - This builds on the simple Round Robin load balancing method. In the weighted version each server in the pool is given a static numerical weighting. Servers with higher ratings get more requests sent to them.  
   * Least Connection - Neither Round Robin or Weighted Round Robin take the current server load into consideration when distributing requests. The Least Connection method does take current server load into consideration. The current request goes to the server that is servicing the least number of active sessions at the current time.  
@@ -123,9 +132,20 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
   * Weighted Response Time - This method uses the response information from a server health check to determine the server that is responding fastest at a particular time. The next server access request is then sent to that server. This ensures that any servers that are under heavy load, and which will respond more slowly, are not sent new requests. This allows the load to even out on the available server pool over time.   
   * Source IP Hash - Source IP Hash load balancing uses an algorithm that takes the source and destination IP address of the client and server and combines them to generate a unique hash key. This key is used to allocate the client to a particular server. As the key can be regenerated if the session is broken this method of load balancing can ensure that the client request is directed to the same server that it was using previously. This is useful if it’s important that a client should connect to a session that is still active after a disconnection. For example, to retain items in a shopping cart between sessions.     
    
+#### 13. Linux Load average(LA) - https://www.tecmint.com/understand-linux-load-averages-and-monitor-performance/
+  * Load average(LA) – is the average system load calculated over a given period of time of 1, 5 and 15 minutes. In Linux, the load-average is technically believed to be a running average of processes in it’s (kernel) execution queue tagged as running or uninterruptible.  
+
+#### 13.1 Filedescriptor (FD)  
+  * Filedescriptor - In simple words, when you open a file, the operating system creates an entry to represent that file and store the information about that opened file. So if there are 100 files opened in your OS then there will be 100 entries in OS (somewhere in kernel). These entries are represented by integers like (...100, 101, 102....). This entry number is the file descriptor. So it is just an integer number that uniquely represents an opened file in operating system. If your process opens 10 files then your Process table will have 10 entries for file descriptors. Similarly when you open a network socket, it is also represented by an integer and it is called Socket Descriptor.
+  * inode (inode)   - is a data structure in a Unix-style file system that describes a filesystem object such as a file or a directory. Each inode stores the attributes and disk block location(s) of the object's data.[1] Filesystem object attributes may include metadata (times of last change,[2] access, modification), as well as owner and permission data. https://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html  
+
+#### 14. SSO/SAML
+  * SAML - Security Assertion Markup Language. is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. As its name implies,SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions).requests a service from the service provider. The service provider requests and obtains an authentication assertion from the identity provider.
   
-  
+  * SSO Single sign-on (SSO) is a session and user authentication service that permits a user to use one set of login credentials (e.g., name and password) to access multiple applications.  
+
 ### soft 
+
 
 #### Agile/Scrum/Kanban https://www.atlassian.com/agile/kanban/kanban-vs-scrum
 
@@ -151,7 +171,7 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
  * Agility is something different all together. Agility is a clean, un-opinionated agile board that progressively adds more structure when you need it. If you can’t decide between scrum and kanban, go with an agility project. 
  
 #### 6. ITSM https://en.wikipedia.org/wiki/IT_service_management
- * It is how you manage the information systems that deliver value to your customers.ITSM could include activities like planning and managing changes so they don’t cause disruption to the business, fixing things when they go wrong
+ * It is how you manage the information systems that deliver value to your customers.ITSM could include activities like planning and managing changes so they don’t cause disruption to the business, fixing things when they go wrong.The goal of IT Service Management is to ensure that the right processes, people, and technology are in place so that the organization can meet its business goals.
 
 #### 7. ITIL https://en.wikipedia.org/wiki/ITIL
  * set of detailed practices for IT service management (ITSM) that focuses on aligning IT services with the needs of business. ITIL describes processes, procedures, tasks, and checklists which are not organization-specific or technology-specific, but can be applied by an organization for establishing integration with the organization's strategy, delivering value, and maintaining a minimum level of competency. It allows the organization to establish a baseline from which it can plan, implement, and measure. It is used to demonstrate compliance and to measure improvement.ITIL is divided into a series of five core volumes, each covering a different ITSM lifecycle stage. These stages are:   
@@ -188,4 +208,7 @@ Delegation is the process by which responsibility and authority for performing a
   * RCA - root cause analysis 
   * ITSM - IT service management 
   * ITIL - Information Technology Infrastructure Library
-  * CALMS - Culture / Automation /Lean practices /Measurement/ Sharing.  
+  * CALMS - Culture / Automation /Lean practices /Measurement/ Sharing. 
+  * Atomic operations in concurrent programming are program operations that run completely independently of any other processes.
+  * Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods  
+  * OAuth 2.0 is the industry-standard protocol for authorization( https://www.cubrid.org/blog/dancing-with-oauth-understanding-how-authorization-works ) 
