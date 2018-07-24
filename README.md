@@ -1,4 +1,16 @@
-# DevOps
+#### 0.what is devops?  https://aws.amazon.com/devops/what-is-devops/  
+  * DevOps is a software engineering culture and practice that aims at unifying software development (Dev) and software operation (Ops).  
+  The main characteristic of the DevOps movement is to strongly advocate automation and monitoring at all steps of software construction    
+  ||  
+  * DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.  
+
+#### 0.1 DevOps Best Practices  
+  * Continuous Integration (Jenkins,TeamCity,Travis CI,Go CD,Bamboo,Gitlab CI,CircleCI)
+  * Continuous Delivery  
+  * Microservices  
+  * Infrastructure as Code  
+  * Monitoring and Logging  
+  * Communication and Collaboration  
 
 #### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
   * Infrastructure as a Service (IaaS) - Contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space. Infrastructure as a Service provides you with the highest level of flexibility and management control over your IT resources and is most similar to existing IT resources that many IT departments and developers are familiar with today.
@@ -63,6 +75,56 @@ The business benefits of DevOps practices are clear. Companies that can deploy c
 https://www.quora.com/What-is-the-difference-between-continuous-integration-and-continuous-deployment
 
 
+#### 10. What is a difference between "git rebase" and "git merge" 
+  * https://www.atlassian.com/git/tutorials/merging-vs-rebasing  
+  > Merge takes all the changes in one branch and merges them into another branch in one commit.   
+  > Rebase says I want the point at which I branched to move to a new starting point  
+  
+  * Merge - Let's say you have created a branch for the purpose of developing a single feature. When you want to bring those changes back to master, you probably want merge (you don't care about maintaining all of the interim commits).  
+  * Rebase - A second scenario would be if you started doing some development and then another developer made an unrelated change. You probably want to pull and then rebase to base your changes from the current version from the repo.  
+
+#### 10.1 git pull vs git fetch
+  *  In the simplest terms, git pull does a git fetch followed by a git merge  
+  * You can do a git fetch at any time to update your remote-tracking branches under refs/remotes/<remote>/.  
+This operation never changes any of your own local branches under refs/heads, and is safe to do without changing your working copy. I have even heard of people running git fetch periodically in a cron job in the background (although I wouldn't recommend doing this).  
+A git pull is what you would do to bring a local branch up-to-date with its remote version, while also updating your other remote-tracking branches.  
+ 
+#### 11. Chef Best Practicies 
+> https://github.com/pulseenergy/chef-style-guide 
+> https://docs.chef.io/ruby.html#patterns-to-follow
+  * use the chef-client cookbook.
+  * Use berkshelf to manage dependencies
+  * Use ChefSpec to simulate the convergence of resources on a node ( Unit testing)( ChefSpec::SoloRunner.new(pla,); expect(chef_run).to create_templ...; ChefSpec is a framework that tests resources and recipes as part of a simulated chef-client run
+  * Integration Testing ( test kitchen )
+  * foodcritic
+  * rubocop
+  * Fauxhai - Fauxhai is a tool for mocking out ohai data to provide node attributes for testing. Fauxhai is used within ChefSpec.
+ 
+ #### 11.1 Chef Development Phases https://blog.chef.io/2015/04/21/overview-of-test-driven-infrastructure-with-chef/
+  * Pre-convergence -  is the phase before a node is converged by Chef, and is the phase when testing that doesn’t require a node to run Chef happens. Syntax checking, lint checking, or unit tests are performed during pre-convergence. Automated testing in CI usually does pre-convergence tests, such as GitHub repositories configured with Travis CI.  
+  * Convergence - is the phase when Chef runs and makes changes to the system to “converge” it to be in the desired state. This is where resources are tested for current state, and repaired (action taken by providers) if they’re not correct.
+  * Post-convergence - is the phase after a node finishes running Chef. Testing in this phase verifies that the node is in the desired state. This can include checks that a particular port is listening, that a configuration file contains the correct content, or that a service is running with the proper configuration.
+
+#### 11.2 Chef Types of Testing
+  * Unit Testing - Unit tests are meant to execute fast, and happen without converging the node, so they are done in the pre-convergence phase. Unit testing Chef cookbooks is done with ChefSpec. It is very important that one does not fall into the trap of testing that Chef itself works.  
+  * Integration Testing(inspec) - The intent of integration testing is to verify that the end state of the system is in fact what we wanted after Chef converges the node so we can have a higher degree of confidence that our code is doing what we need.
+
+#### 11.3 Chef Vs Ansible
+  * Ansible’s agentless push-mode using a ZeroMQ implementation at the transport layer means quick deployment and low performance overhead when triggering ad-hoc jobs from a developer workstation or a central resource like the Ansible tower.
+  * Chef can work like pull-base client-agent however, Chef also provides a ZeroMQ-based push agent via its “push-jobs” add-on package.
+   
+#### 12.  Load Balancing methods  
+  * Round Robin - A simple method of load balancing servers or for providing simple fault tolerance.  
+  * Weighted Round Robin - This builds on the simple Round Robin load balancing method. In the weighted version each server in the pool is given a static numerical weighting. Servers with higher ratings get more requests sent to them.  
+  * Least Connection - Neither Round Robin or Weighted Round Robin take the current server load into consideration when distributing requests. The Least Connection method does take current server load into consideration. The current request goes to the server that is servicing the least number of active sessions at the current time.  
+  * Weighted Least Connection - Builds on the Least Connection method. Like in the Weighted Round Robin method each server is given a numerical value. The load balancer uses this when allocating requests to servers. If two servers have the same number of active connections then the server with the higher weighting will be allocated the new request.   
+  * Agent Based Adaptive Load Balancing - Each server in the pool has an agent that reports on its current load to the load balancer. This real time information is used when deciding which server is best placed to handle a request. This is used in conjunction with other techniques such as Weighted Round Robin and Weighted Least Connection.
+  * Chained Failover (Fixed Weighted) - In this method a predetermined order of servers is configured in a chain. All requests are sent to the first server in the chain. If it can’t accept any more requests the next server in the chain is sent all requests, then the third server. And so on.   
+  * Weighted Response Time - This method uses the response information from a server health check to determine the server that is responding fastest at a particular time. The next server access request is then sent to that server. This ensures that any servers that are under heavy load, and which will respond more slowly, are not sent new requests. This allows the load to even out on the available server pool over time.   
+  * Source IP Hash - Source IP Hash load balancing uses an algorithm that takes the source and destination IP address of the client and server and combines them to generate a unique hash key. This key is used to allocate the client to a particular server. As the key can be regenerated if the session is broken this method of load balancing can ensure that the client request is directed to the same server that it was using previously. This is useful if it’s important that a client should connect to a session that is still active after a disconnection. For example, to retain items in a shopping cart between sessions.     
+   
+  
+  
 ### soft 
 
 #### Agile/Scrum/Kanban https://www.atlassian.com/agile/kanban/kanban-vs-scrum
