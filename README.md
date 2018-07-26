@@ -84,7 +84,16 @@ https://stackify.com/15-metrics-for-devops-success/
 The business benefits of DevOps practices are clear. Companies that can deploy changes quickly and reliably are able to introduce new features and improvements in response to the market, and ahead of competitors. Their revenue streams are more dependable, and they can plan better for the future. 
 
 #### 7. Continuous Integration (CI):   
-  * short-lived feature branches, team is merging to master branch multiple times per day, fully automated build and test process which gives feedback within 10 minutes; deployment is manual.
+  * Continuous Integration (CI) is a development practice that requires developers to integrate code into a shared repository several times a day. Each check-in is then verified by an automated build, allowing teams to detect problems early. By integrating regularly, you can detect errors quickly, and locate them more easily.Continuous Integration brings multiple benefits to your organization:
+  
+> Say goodbye to long and tense integrations  
+> Increase visibility enabling greater communication  
+> Catch issues early and nip them in the bud  
+> Spend less time debugging and more time adding features  
+> Build a solid foundation  
+> Stop waiting to find out if your code’s going to work  
+> Reduce integration problems allowing you to deliver software more rapidly  
+
 
 #### 8. Continuous Delivery (CD): 
   * CI + the entire software release process is automated, it may be composed of multiple stages, and deployment to production is manual.
