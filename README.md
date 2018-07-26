@@ -28,6 +28,19 @@ SRE and DevOps share the same foundational principles.SRE ensures that everyone 
   * TDD - Test-Driven Development is a process for when you write and run your tests. Following it makes it possible to have a very high test-coverage. Test-coverage refers to the percentage of your code that is tested automatically, so a higher number is better
   * TDD VS BDD - Unit Testing gives you the what. Test-Driven Development gives you the when. Behavior Driven-Development gives you the how  
 
+#### 0.7 What is Docker? - https://www.edureka.co/blog/interview-questions/docker-interview-questions/
+  * Docker -  is a containerization platform which packages your application and all its dependencies together in the form of containers so as to ensure that your application works seamlessly in any environment be it development or test or production.
+
+#### 0.8 - What is Docker container?
+  * Docker containers include the application and all of its dependencies, but share the kernel with other containers, running as isolated processes in user space on the host operating system. Docker containers are not tied to any specific infrastructure: they run on any computer, on any infrastructure, and in any cloud.  
+
+#### 0.8 What is Docker image?  
+  * Docker image is the source of Docker container. In other words, Docker images are used to create containers. Images are created with the build command, and they’ll produce a container when started with run. Images are stored in a Docker registry such as registry.hub.docker.com because they can become quite large, images are designed to be composed of layers of other images, allowing a minimal amount of data to be sent when transferring images over the network.  
+  
+#### 0.9 - Docker layers ; https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612 
+  * Layers of a Docker image are essentially just files generated from running some command. You can view the contents of each layer on the Docker host at /var/lib/docker/aufs/diff. Layers are neat because they can be re-used by multiple images saving disk space and reducing time to build images while maintaining their integrity.
+
+
 #### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
   * Infrastructure as a Service (IaaS) - Contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space. Infrastructure as a Service provides you with the highest level of flexibility and management control over your IT resources and is most similar to existing IT resources that many IT departments and developers are familiar with today.
 
