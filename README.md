@@ -196,6 +196,8 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
   
   * SSO Single sign-on (SSO) is a session and user authentication service that permits a user to use one set of login credentials (e.g., name and password) to access multiple applications.  
 
+#### 15. HighAvailability(HA) vs FaultToulerance  - https://blog.interfaceware.com/disaster-recovery-vs-high-availability-vs-fault-tolerance-what-are-the-differences/
+
 ### soft 
 
 
