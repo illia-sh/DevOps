@@ -262,6 +262,16 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
   * 3) Being Prepared To Listen  
   * 4) Leading By Example ( One sure way to demonstrate your commitment to the role is to show what you can do. This means being a good role model for your team in terms of what you expect yourself in terms of behaviour.)  
 
+#### 8.2 What are the ways to motivate a Team ? 
+ * 1) insteseting tasks  
+ * 2) Training  
+ * 3) recognition  
+ * 4) Listen  
+ * 5) Use new technology  
+ * 6) Flexible work hours  
+ * 7) Respect  
+ * 8) Opportunities for growth  
+ 
 #### 9.RACI matrix (Responsible, Accountable, Consulted, and Informed) 
  * Responsible (also Recommender) Those who do the work to achieve the task
  * Accountable (also Approver or final approving authority), accountable must sign off (approve) work that responsible provides. There must be only one accountable specified for each task or deliverable
