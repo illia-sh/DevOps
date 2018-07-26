@@ -254,7 +254,14 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
  * Delegating - identify the skills of each of your employees, and assign duties to each employee based on his or her skill set.    
  * Positivity   
  * Feedback ( Following up, coaching , Mentoring ...) 
- * Responsibility - A leader is responsible for both the successes and failures of his or her team. Therefore, you need to be willing to accept blame when something does not go correctly. ( Acknowledging mistakes, Project planning, Resolving problems)  
+ * Responsibility - A leader is responsible for both the successes and failures of his or her team. Therefore, you need to be willing to accept blame when something does not go correctly. ( Acknowledging mistakes, Project planning, Resolving problems) 
+
+#### 8.1 What key values should have a person who try to lead some project? 
+  * 1) Recognising The Value Of Your Team Members  
+  * 2) Involving The Team In Decisions That Affect Them  
+  * 3) Being Prepared To Listen  
+  * 4) Leading By Example ( One sure way to demonstrate your commitment to the role is to show what you can do. This means being a good role model for your team in terms of what you expect yourself in terms of behaviour.)  
+
 #### 9.RACI matrix (Responsible, Accountable, Consulted, and Informed) 
  * Responsible (also Recommender) Those who do the work to achieve the task
  * Accountable (also Approver or final approving authority), accountable must sign off (approve) work that responsible provides. There must be only one accountable specified for each task or deliverable
