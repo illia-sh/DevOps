@@ -156,6 +156,19 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
   * Filedescriptor - In simple words, when you open a file, the operating system creates an entry to represent that file and store the information about that opened file. So if there are 100 files opened in your OS then there will be 100 entries in OS (somewhere in kernel). These entries are represented by integers like (...100, 101, 102....). This entry number is the file descriptor. So it is just an integer number that uniquely represents an opened file in operating system. If your process opens 10 files then your Process table will have 10 entries for file descriptors. Similarly when you open a network socket, it is also represented by an integer and it is called Socket Descriptor.
   * inode (inode)   - is a data structure in a Unix-style file system that describes a filesystem object such as a file or a directory. Each inode stores the attributes and disk block location(s) of the object's data.[1] Filesystem object attributes may include metadata (times of last change,[2] access, modification), as well as owner and permission data. https://www.cyberciti.biz/tips/understanding-unixlinux-filesystem-inodes.html  
 
+#### 13.2 What-really-happens-when-you-type-ls - https://medium.com/meatandmachines/what-really-happens-when-you-type-ls-l-in-the-shell-a8914950fd73  
+  * Alias file(s) are checked to see if a shortcut for the command has been previously set.  
+  * Shell searches its own built-in functions to see if the token command’s program exists.  
+  * shell will continue it’s search in the PATH, a list of directories whose content programs can be executed no matter where in the directory tree it is run. You can view which directory paths are in the PATH environmental variable by typing env  
+  * To execute ls, three system calls are made:fork / execve / wait  
+
+#### 13.3 How SSL works - https://www.digicert.com/ssl/  
+  * Browser connects to a web server (website) secured with SSL (https). Browser requests that the server identify itself.  
+  * Server sends a copy of its SSL Certificate, including the server’s public key.  
+  * Browser checks the certificate root against a list of trusted CAs and that the certificate is unexpired, unrevoked, and that its common name is valid for the website that it is connecting to. If the browser trusts the certificate, it creates, encrypts, and sends back a symmetric session key using the server’s public key.  
+  * Server decrypts the symmetric session key using its private key and sends back an acknowledgement encrypted with the session key to start the encrypted session.   
+  * Server and Browser now encrypt all transmitted data with the session key.   
+
 #### 14. SSO/SAML
   * SAML - Security Assertion Markup Language. is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. As its name implies,SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions).requests a service from the service provider. The service provider requests and obtains an authentication assertion from the identity provider.
   
