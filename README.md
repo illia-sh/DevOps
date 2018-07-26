@@ -206,6 +206,20 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 
 #### 2. Kanban – Incremental Improvements
  * Kanban is all about continuous development and delivery, tackling a small number of tasks fluidly and concurrently. Kanban teams use a visual planning tool—the kanban board—that displays each project (user story) on a card and moves cards through columns that represent progressive stages of completion. If your team has a continuous stream of work requests, kanban may be right for you.
+ 
+#### 2.1 - What is an aim of KANBAN methodology, and why it works better in DevOps?
+  * The Kanban Method follows a set of principles and practices for managing and improving the flow of work.Kanban has come to the software development world from the automotive industry (Toyota Production System). The aim is to achieve higher throughput with lower delivery lead times. The Main Core Practices of the Kanban Method:    
+> 1) Visualize the flow of work  
+> 2) Limit WIP (Work in Progress):   
+> 3) Manage Flow:   
+> 4) Make Process Policies Explicit   
+> 5) Implement Feedback Loops   
+
+  * "why it works better in DevOps" -    
+>  1) Kanban combines multiple streams into one  
+> 2) Gives leverage to say NO ( If your plate is full already, Kanban will tell you. You hit the WIP limits)  
+> 3) Improves flow team communication    
+
   ###### Release Methodology    
 > In kanban, updates are released whenever they are ready, without a regular schedule or predetermined due dates.       
 > In theory, kanban does not prescribe a fixed time to deliver a task. If the task gets completed earlier (or later), it can be released as needed without having to wait for a preset release milestone, as in the case of scrum.    
