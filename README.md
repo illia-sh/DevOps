@@ -96,7 +96,7 @@ The business benefits of DevOps practices are clear. Companies that can deploy c
 
 
 #### 8. Continuous Delivery (CD): 
-  * CI + the entire software release process is automated, it may be composed of multiple stages, and deployment to production is manual.
+  * Continuous delivery is an extension of continuous integration to make sure that you can release new changes to your customers quickly in a sustainable way. This means that on top of having automated your testing, you also have automated your release process and you can deploy your application at any point of time by clicking on a button.
 
 #### 9. Continuous Deployment (CI+CD):  
   * CI + CD + fully automated deployment to production.
