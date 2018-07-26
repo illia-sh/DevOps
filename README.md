@@ -233,7 +233,9 @@ The life cycle defines a methodology for improving the quality of software and t
 #### 11.Task assignment VS Task delegation
   * An assignment is the process of transferring responsibility and accountability.
 Delegation is the process by which responsibility and authority for performing a task or activity is transferred to another person.
-####  
+#### 12. Incident Vs Problem (ITIL) - https://blog.samanage.com/it-service-management/whats-the-difference-between-problems-and-incidents/
+  * An incident is an event that leads to an unplanned disruption of service. The important part to remember is ‘disruption of service,’ because if an issue does not disrupt service, even if it was unplanned and unexpected, it is not an incident. For example, if a piece of hardware fails after hours when nobody is using the system, it is not an incident, because it did not disrupt service. However, if the same equipment failed during the regular workday, it would be defined as an incident because service was, in fact, disrupted. The IT help desk is often the first ones to be made aware of an incident, as they are usually the first point of contact for users experiencing issues with the system.  
+  * Problem - A problem is the underlying cause that leads to an incident. A problem may be something that could lead to the same incident occurring again, or lead to another incident entirely. The problem is essentially the root cause of an incident or incidents.
 
   * RCA - root cause analysis 
   * ITSM - IT service management 
