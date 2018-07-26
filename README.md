@@ -180,7 +180,7 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 #### Agile/Scrum/Kanban https://www.atlassian.com/agile/kanban/kanban-vs-scrum
 
 #### 1. Agile
- * Agile is a structured and iterative approach to project management and product development. It recognizes the volatility of product development, and provides a methodology for self-organizing teams to respond to change without going off the rails. Today, agile is hardly a competitive advantage. No one has the luxury to develop a product for years or even months in a black box. This means it’s more important than ever to get it right.
+ * Agile is a structured and iterative approach to project management and product development. It recognizes the volatility of product development, and provides a methodology for self-organizing teams to respond to change without going off the rails. Agile principles are all about being collaborative, flexible and adaptive.  Agile Methodologies Scrum and Kanban .
 
 #### 2. Kanban – Incremental Improvements
  * Kanban is all about continuous development and delivery, tackling a small number of tasks fluidly and concurrently. Kanban teams use a visual planning tool—the kanban board—that displays each project (user story) on a card and moves cards through columns that represent progressive stages of completion. If your team has a continuous stream of work requests, kanban may be right for you.
