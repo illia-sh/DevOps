@@ -5,17 +5,28 @@
   * DevOps is the combination of cultural philosophies, practices, and tools that increases an organization’s ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes. This speed enables organizations to better serve their customers and compete more effectively in the market.  
 
 #### 0.2 What is SRE? - https://cloudplatform.googleblog.com/2018/05/SRE-vs-DevOps-competing-standards-or-close-friends.html
+SRE and DevOps share the same foundational principles.SRE ensures that everyone agrees on how to measure availability, and what to do when availability falls out of specification. This process includes individual contributors at every level, all the way up to VPs and executives, and it creates a shared responsibility for availability across the organization. SREs work with stakeholders to decide on Service Level Indicators (SLIs) and Service Level Objectives (SLOs).
 
 #### 0.3 Agile vs Devops
   * Agile software development methodology focuses on the development of software but DevOps on the other hand is responsible for development as well as deployment of the software in the safest and most reliable way
   
-#### 0.3 DevOps Best Practices  
+#### 0.4 DevOps Best Practices  
   * Continuous Integration (Jenkins,TeamCity,Travis CI,Go CD,Bamboo,Gitlab CI,CircleCI)
   * Continuous Delivery  
   * Microservices  
   * Infrastructure as Code  
   * Monitoring and Logging  
   * Communication and Collaboration  
+
+#### 0.5 SLA/SLO/SLI
+  * SLA - A service-level agreement (SLA) is a commitment between a service provider and a client. Particular aspects of the service – quality, availability, responsibilities – are agreed between the service provider and the service user  
+  * SLO - are specific measurable characteristics of the SLA such as availability, throughput, frequency, response time, or quality. These SLOs together are meant to define the expected service between the provider and the customer and vary depending on the service's urgency, resources, and budget. SLOs provide a quantitative means to define the level of service a customer can expect from a provider.    
+  * SLI - is a Service Level Indicator (SLI). When we evaluate whether our system has been running within SLO for the past week, we look at the SLI to get the service availability percentage.
+  
+#### 0.6  
+  * BDD – Behavior-Driven Development -  BDD is a set of best practices for writing great tests. BDD can, and should be, used together with TDD and unit testing methods.  
+  * TDD - Test-Driven Development is a process for when you write and run your tests. Following it makes it possible to have a very high test-coverage. Test-coverage refers to the percentage of your code that is tested automatically, so a higher number is better
+  * TDD VS BDD - Unit Testing gives you the what. Test-Driven Development gives you the when. Behavior Driven-Development gives you the how  
 
 #### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
   * Infrastructure as a Service (IaaS) - Contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space. Infrastructure as a Service provides you with the highest level of flexibility and management control over your IT resources and is most similar to existing IT resources that many IT departments and developers are familiar with today.
@@ -47,9 +58,12 @@ https://www.atlassian.com/agile/software-development/branching
  -- integrate changes according to development process  
 
   * TRUNK(mainline) - A source-control branching model, where developers collaborate on code in a single branch called ‘trunk’   
-  * Gitflow Workflow  - is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release.  
+  * Gitflow Workflow  - The Gitflow Workflow defines a strict branching model designed around the project release. https://datasift.github.io/gitflow/IntroducingGitFlow.html   
 
   * GitHub flow - https://www.freshconsulting.com/git-development-workflows-git-flow-vs-github-flow/
+  * GitLab Flow - https://docs.gitlab.com/ee/workflow/gitlab_flow.html 
+  https://about.gitlab.com/2016/07/27/the-11-rules-of-gitlab-flow/
+  
   
 #### 5. Containerization vs virtualization ( Containers vs virtual machines )  https://blog.netapp.com/blogs/containers-vs-vms/
   * Containers and virtual machines have similar resource isolation and allocation benefits, but function differently because containers virtualize the operating system instead of hardware. Containers are more portable and efficient.
