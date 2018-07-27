@@ -212,7 +212,7 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 #### 1. Agile
  * Agile is a structured and iterative approach to project management and product development. It recognizes the volatility of product development, and provides a methodology for self-organizing teams to respond to change without going off the rails. Agile principles are all about being collaborative, flexible and adaptive.  Agile Methodologies Scrum and Kanban .
 
-#### 2. Kanban – Incremental Improvements
+#### 2. Kanban – Incremental Improvements https://www.eylean.com/blog/wp-content/uploads/2017/05/Kanban-Cheat-Sheet.png
  * Kanban is all about continuous development and delivery, tackling a small number of tasks fluidly and concurrently. Kanban teams use a visual planning tool—the kanban board—that displays each project (user story) on a card and moves cards through columns that represent progressive stages of completion. If your team has a continuous stream of work requests, kanban may be right for you.
  
 #### 2.1 - What is an aim of KANBAN methodology, and why it works better in DevOps?
@@ -238,7 +238,7 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 > The Scrum Master manages the scrum board and workflow, and helps the team stay grounded in the scrum framework.   
 > The development team completes the work and demonstrates collective accountability.    
 
-#### 4. Kanban vs Scrum 
+#### 4. Kanban vs Scrum  https://i.pinimg.com/564x/c4/7e/08/c47e081832b5d1c403537f8212f9355a.jpg
   * Looking at both agile software development methodologies it should be more clear what to introduce when: If your organization is really stuck and needs a fundamental shift towards a more efficient process, Scrum seems to be more appropiate. If you already have working processes, which you want to improve over time without shaking up the whole system, Kanban should be your tool of choice.
   
 #### 5. Agility 
