@@ -229,8 +229,8 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 
 #### Agile/Scrum/Kanban https://www.atlassian.com/agile/kanban/kanban-vs-scrum
 
-#### 1. Agile
- * Agile is a structured and iterative approach to project management and product development. It recognizes the volatility of product development, and provides a methodology for self-organizing teams to respond to change without going off the rails. Agile principles are all about being collaborative, flexible and adaptive.  Agile Methodologies Scrum and Kanban .
+#### 1. Agile  - https://www.atlassian.com/agile
+ * Agile is an iterative approach to project management and software development that helps teams deliver value to their customers faster and with fewer headaches. Instead of betting everything on a "big bang" launch, an agile team delivers work in small, but consumable, increments. Requirements, plans, and results are evaluated continuously so teams have a natural mechanism for responding to change quickly.  Agile Methodologies Scrum and Kanban .
 
 #### 2. Kanban – Incremental Improvements https://www.eylean.com/blog/wp-content/uploads/2017/05/Kanban-Cheat-Sheet.png
  * Kanban is all about continuous development and delivery, tackling a small number of tasks fluidly and concurrently. Kanban teams use a visual planning tool—the kanban board—that displays each project (user story) on a card and moves cards through columns that represent progressive stages of completion. If your team has a continuous stream of work requests, kanban may be right for you.
@@ -250,10 +250,15 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 
   ###### Release Methodology    
 > In kanban, updates are released whenever they are ready, without a regular schedule or predetermined due dates.       
-> In theory, kanban does not prescribe a fixed time to deliver a task. If the task gets completed earlier (or later), it can be released as needed without having to wait for a preset release milestone, as in the case of scrum.    
-#### 3. Scrum  
-  * Scrum also splits out complex tasks into user stories and visualizes them on a workflow. Scrum teams commit to ship working software at the end of set intervals, called sprints. If you need to ship value to customers on a regular basis, scrum is the way.  
-  
+> In theory, kanban does not prescribe a fixed time to deliver a task. If the task gets completed earlier (or later), it can be released as needed without having to wait for a preset release milestone, as in the case of scrum.     
+
+#### 3. Scrum  - https://www.atlassian.com/agile/scrum
+  * Scrum  splits out complex tasks into user stories and visualizes them on a workflow. Scrum teams commit to ship working software at the end of set intervals, called sprints. 
+  * 1. Sprint planning: A team planning meeting that determines what to complete in the coming sprint.  
+  * 2. Daily stand-up: Also known as a daily scrum, a 15-minute mini-meeting for the software team to sync.  
+  * 3. Sprint demo: A sharing meeting where the team shows what they've shipped in that sprint.   
+  * 4. print retrospective: A review of what did and didn't go well with actions to make the next sprint better.  
+
    ###### Scrum Roles:  
 > The Product Owner owns and manages the product backlog, understands business requirements, and prioritizes the work to be done by the development team.     
 > The Scrum Master manages the scrum board and workflow, and helps the team stay grounded in the scrum framework.   
