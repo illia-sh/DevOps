@@ -40,6 +40,12 @@ SRE and DevOps share the same foundational principles.SRE ensures that everyone 
 #### 0.9 - Docker layers ; https://medium.com/@jessgreb01/digging-into-docker-layers-c22f948ed612 
   * Layers of a Docker image are essentially just files generated from running some command. You can view the contents of each layer on the Docker host at /var/lib/docker/aufs/diff. Layers are neat because they can be re-used by multiple images saving disk space and reducing time to build images while maintaining their integrity.
 
+#### 0.10 Kubernetes Helm - https://github.com/helm/helm
+ * Helm is a tool for managing Kubernetes charts.   
+ * Charts are packages of pre-configured Kubernetes resources.  
+ * Helm has two parts: a client (helm) and a server (tiller)  
+ * Tiller runs inside of your Kubernetes cluster, and manages releases (installations) of your charts.  
+ 
 
 #### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
   * Infrastructure as a Service (IaaS) - Contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space. Infrastructure as a Service provides you with the highest level of flexibility and management control over your IT resources and is most similar to existing IT resources that many IT departments and developers are familiar with today.
