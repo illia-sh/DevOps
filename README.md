@@ -46,6 +46,11 @@ SRE and DevOps share the same foundational principles.SRE ensures that everyone 
  * Helm has two parts: a client (helm) and a server (tiller)  
  * Tiller runs inside of your Kubernetes cluster, and manages releases (installations) of your charts.  
  
+#### 0.11 Aws Devops Tool - https://aws.amazon.com/devops/
+ * AWS CodePipeline
+ * AWS CodeBuild
+ * AWS CodeDeploy
+ * AWS CodeStar
 
 #### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
   * Infrastructure as a Service (IaaS) - Contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space. Infrastructure as a Service provides you with the highest level of flexibility and management control over your IT resources and is most similar to existing IT resources that many IT departments and developers are familiar with today.
