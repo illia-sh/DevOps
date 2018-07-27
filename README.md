@@ -233,6 +233,7 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 > In theory, kanban does not prescribe a fixed time to deliver a task. If the task gets completed earlier (or later), it can be released as needed without having to wait for a preset release milestone, as in the case of scrum.    
 #### 3. Scrum  
   * Scrum also splits out complex tasks into user stories and visualizes them on a workflow. Scrum teams commit to ship working software at the end of set intervals, called sprints. If you need to ship value to customers on a regular basis, scrum is the way.  
+  
    ###### Scrum Roles:  
 > The Product Owner owns and manages the product backlog, understands business requirements, and prioritizes the work to be done by the development team.     
 > The Scrum Master manages the scrum board and workflow, and helps the team stay grounded in the scrum framework.   
@@ -240,7 +241,10 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
 
 #### 4. Kanban vs Scrum  https://i.pinimg.com/564x/c4/7e/08/c47e081832b5d1c403537f8212f9355a.jpg
   * Looking at both agile software development methodologies it should be more clear what to introduce when: If your organization is really stuck and needs a fundamental shift towards a more efficient process, Scrum seems to be more appropiate. If you already have working processes, which you want to improve over time without shaking up the whole system, Kanban should be your tool of choice.
-  
+
+#### 4.1 ScrumBan - https://en.wikipedia.org/wiki/Scrumban
+ * In Scrumban, the teamwork is organized in small iterations and monitored with the help of a visual board, similar to Scrum and kanban boards.
+
 #### 5. Agility 
  * Agility is something different all together. Agility is a clean, un-opinionated agile board that progressively adds more structure when you need it. If you can’t decide between scrum and kanban, go with an agility project. 
  
