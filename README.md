@@ -136,7 +136,12 @@ https://www.quora.com/What-is-the-difference-between-continuous-integration-and-
   * You can do a git fetch at any time to update your remote-tracking branches under refs/remotes/<remote>/.  
 This operation never changes any of your own local branches under refs/heads, and is safe to do without changing your working copy. I have even heard of people running git fetch periodically in a cron job in the background (although I wouldn't recommend doing this).  
 A git pull is what you would do to bring a local branch up-to-date with its remote version, while also updating your other remote-tracking branches.  
- 
+
+#### 10.2 git vs svn 
+  * Git is not better than Subversion. But is also not worse. It's different.The key difference is that Git is decentralized. 
+  * Git tracks content rather than files  
+  * SVN represents the most popular centralized version control system on the market. With a centralized system, all files and historical data are stored on a central server. And developers commit their changes directly to that central server repository.  
+  
 #### 11. Chef Best Practicies 
 > https://github.com/pulseenergy/chef-style-guide 
 > https://docs.chef.io/ruby.html#patterns-to-follow
@@ -196,6 +201,16 @@ A git pull is what you would do to bring a local branch up-to-date with its remo
   * Browser checks the certificate root against a list of trusted CAs and that the certificate is unexpired, unrevoked, and that its common name is valid for the website that it is connecting to. If the browser trusts the certificate, it creates, encrypts, and sends back a symmetric session key using the server’s public key.  
   * Server decrypts the symmetric session key using its private key and sends back an acknowledgement encrypted with the session key to start the encrypted session.   
   * Server and Browser now encrypt all transmitted data with the session key.   
+
+#### 13.4 How DNS works  - https://dyn.com/blog/dns-why-its-important-how-it-works/
+  * The first place your computer looks is its local DNS cache(browser/host), hosts file  
+  * queries (contacts) your ISP’s recursive DNS servers.  
+  * If the recursive servers don’t have the answer, they query the root nameservers  
+  * The root nameservers will look at the first part of our request, reading from right to left — www.dyn.com — and direct our query to the Top-Level Domain (TLD) nameservers for .com.   
+  * The TLD nameservers review the next part of our request — www.dyn.com — and direct our query to the nameservers responsible for this specific domain   
+  * The recursive server retrieves the A record for dyn.com from the authoritative nameservers and stores the record in its local cache. If anyone else requests the host record for dyn.com, the recursive servers will already have the answer and will not need to go through the lookup process again   
+  *  recursive server returns the A record back to your computer.   
+  
 
 #### 14. SSO/SAML
   * SAML - Security Assertion Markup Language. is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. As its name implies,SAML is an XML-based markup language for security assertions (statements that service providers use to make access-control decisions).requests a service from the service provider. The service provider requests and obtains an authentication assertion from the identity provider.
