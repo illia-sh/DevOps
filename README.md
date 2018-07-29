@@ -334,3 +334,19 @@ Delegation is the process by which responsibility and authority for performing a
   * Atomic operations in concurrent programming are program operations that run completely independently of any other processes.
   * Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which may contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods  
   * OAuth 2.0 is the industry-standard protocol for authorization( https://www.cubrid.org/blog/dancing-with-oauth-understanding-how-authorization-works ) 
+  * ALM (application lifecycle management) - is a continuous process of managing the life of an application through governance, development and maintenance.  
+  * AUT (application under test) - it`s an application located in the Testing phase of SDLC.    
+  * Build repository - a storage location from which software packages may be retrieved and installed on a computer.   
+  * Code Smells - refers to any symptom in the source code of a program that possibly indicates a deeper problem.   
+  * CSRF (cross-site request forgery) - a type of malicious exploit of a website where unauthorized commands are transmitted from a user that the website trusts.   
+  * "Green" delivery - the project is performing according to a plan and delivery is on track.    
+  * ISV (independent software vendor) - a company whose primary function is to distribute software.  
+  * IDE (Integrated Development Environment) - a software application that provides comprehensive facilities to computer programmers for software development.   
+  * Jira - a proprietary issue tracking product, developed by Atlassian. It provides bug tracking, issue tracking, and project management functions.     
+  * Static Code Analysis - the analysis of computer software that is performed without actually executing programs (analysis performed on executing programs is known as dyamic analysis).    
+  * Smoke test - a type of software testing that comprises of a non-exhaustive set of tests that aim at ensuring that the most important functions work.   
+  * Test harness - a collection of software and test data configured to test a program unit by running it under varying conditions and monitoring its behavior and outputs.   
+  * Technical debt - a concept in programming that reflects the extra development work that arises when code that is easy to implement in the short run is used instead of applying the best overall solution.    
+  * UAT (User Acceptance Testing) - the last phase of the software testing process, during which actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications.    
+  * Version control system - a system to manage changes to documents, computer programs, large web sites, and other collections of information.    
+  * XSS (cross-site scripting) - a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users.    
