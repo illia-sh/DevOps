@@ -349,4 +349,8 @@ Delegation is the process by which responsibility and authority for performing a
   * Technical debt - a concept in programming that reflects the extra development work that arises when code that is easy to implement in the short run is used instead of applying the best overall solution.    
   * UAT (User Acceptance Testing) - the last phase of the software testing process, during which actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications.    
   * Version control system - a system to manage changes to documents, computer programs, large web sites, and other collections of information.    
-  * XSS (cross-site scripting) - a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users.    
+  * XSS (cross-site scripting) - a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users.  
+  * RTO (Recovery Time Objective) – The accepL
+business process service level.  
+  * RPO (Recovery Point Objective) – The acceptable amount of data that can be lost due to failure as it is measured in time.
+
