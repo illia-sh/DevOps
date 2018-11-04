@@ -52,6 +52,27 @@ SRE and DevOps share the same foundational principles.SRE ensures that everyone 
  * AWS CodeDeploy
  * AWS CodeStar
 
+#### 0.12 Aws Backup and Disaster Recovery Methods - http://d36cz9buwru1tt.cloudfront.net/AWS_Disaster_Recovery.pdf   
+ * Pilot Light - A minimal version of an environment that is always running in the AWS cloud. In the event of a failover it takes only a few minutes for a scripted solution to “turn on the furnace” and deploy the disaster recovery solution. Examples include small RDS instances for replication, data being replicated to EBS volumes with smaller size instances. In the event of failover the application will launch larger instances and/or increase the number of instances in the auto scaling group to meet demand. Have pre-configured AMIs with business roles (bootstrap scripts) to easily deploy in the event of a failover. Only “minimal” components used for replication of data are running in the AWS Cloud environment.
+ The pilot light method gives you a quicker recovery time than the backup-and-restore method because the core pieces
+of the system are already running and are continually kept up to date. AWS enables you to automate the provisioning
+and configuration of the infrastructure resources, which can be a significant benefit to save time and help protect
+against human errors. However, you will still need to perform some installation and configuration tasks to recover the
+applications fully.
+ * Warm Standby - A scaled down version of a fully functional duplicate application in the cloud. In the event of failover auto scale to handle full production load.
+ The term warm standby is used to describe a DR scenario in which a scaled-down version of a fully functional
+environment is always running in the cloud. A warm standby solution extends the pilot light elements and preparation. It
+further decreases the recovery time because some services are always running. By identifying your business-critical
+systems, you can fully duplicate these systems on AWS and have them always on.  
+These servers can be running on a minimum-sized fleet of Amazon EC2 instances on the smallest sizes possible. This
+solution is not scaled to take a full-production load, but it is fully functional. It can be used for non-production work,
+such as testing, quality assurance, and internal use.  
+In a disaster, the system is scaled up quickly to handle the production load. In AWS, this can be done by adding more
+instances to the load balancer and by resizing the small capacity servers to run on larger Amazon EC2 instance types. As
+stated in the preceding section, horizontal scaling is preferred over vertical scaling.  
+ * Multi-Site Solution – An exact operating duplicate of your primary application. In fact, DNS should be able to “load balance” or use weighted based routing to serve traffic from both application environments. One on premise and one in the AWS cloud. In the event of a failover it auto switches to the backup solution. In this situation you generally will only have one “writing ” database. In the event of failover ensure that the backup application is writing to the correct database  
+ * AWS To AWS multi-region failover and disaster recovery – Copy snapshots of EBS/RDS/Redshift to another region, utilize read replicas, and Route 53 for easy failover to design cross region disaster recovery.  
+
 #### 1. Three main cloud computing models: IaaS,SaaS,PaaS  
   * Infrastructure as a Service (IaaS) - Contains the basic building blocks for cloud IT and typically provide access to networking features, computers (virtual or on dedicated hardware), and data storage space. Infrastructure as a Service provides you with the highest level of flexibility and management control over your IT resources and is most similar to existing IT resources that many IT departments and developers are familiar with today.
 
