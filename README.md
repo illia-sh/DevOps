@@ -350,7 +350,6 @@ Delegation is the process by which responsibility and authority for performing a
   * UAT (User Acceptance Testing) - the last phase of the software testing process, during which actual software users test the software to make sure it can handle required tasks in real-world scenarios, according to specifications.    
   * Version control system - a system to manage changes to documents, computer programs, large web sites, and other collections of information.    
   * XSS (cross-site scripting) - a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users.  
-  * RTO (Recovery Time Objective) – The accepL
-business process service level.  
+  * RTO (Recovery Time Objective) – The acceptable amout of time it takes to restore applications to the business process service level.
   * RPO (Recovery Point Objective) – The acceptable amount of data that can be lost due to failure as it is measured in time.
 
