@@ -373,4 +373,7 @@ Delegation is the process by which responsibility and authority for performing a
   * XSS (cross-site scripting) - a type of computer security vulnerability typically found in web applications. XSS enables attackers to inject client-side scripts into web pages viewed by other users.  
   * RTO (Recovery Time Objective) – The acceptable amout of time it takes to restore applications to the business process service level.
   * RPO (Recovery Point Objective) – The acceptable amount of data that can be lost due to failure as it is measured in time.
+ 
+ -------
+  *  TOGAF - https://en.wikipedia.org/wiki/The_Open_Group_Architecture_Framework 
 
